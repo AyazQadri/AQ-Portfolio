@@ -22,6 +22,9 @@ const Hero = () => {
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
           <h2>{hero.title}</h2>
           <br />
+          <div className="flex justify-center items-center pb-5">
+            <h2>{hero.subtitle}</h2>
+          </div>
           <div className="flex justify-end">
             <button className="btn">{hero.btnText}</button>
           </div>

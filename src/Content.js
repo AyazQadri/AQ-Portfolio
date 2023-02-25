@@ -1,12 +1,18 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
 
-import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
-import reactjs from "./assets/images/Skills/react.png";
-import nodejs from "./assets/images/Skills/node.png";
-import python from "./assets/images/Skills/python.png";
+import atomicStructureLogo from "./assets/images/Skills/sketch.png";
+import reactLogo from "./assets/images/Skills/react.png";
+import laravelLogo from './assets/images/Skills/laravellogo.png';
+import nextLogo from './assets/images/Skills/next-logo.png';
+import sourcetreeLogo from './assets/images/Skills/sourcetreelogo.png';
+import githubLogo from './assets/images/Skills/githublogo.png';
+import gitLogo from './assets/images/Skills/gitlogo.png';
+import bitbucketLogo from './assets/images/Skills/bitbucketlogo.png';
+import materialuiLogo from './assets/images/Skills/materiallogo.png';
+import reduxLogo from './assets/images/Skills/reduxlogo.png';
+import tailwindcssLogo from './assets/images/Skills/tailwindlogo.png';
+
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -58,18 +64,19 @@ export const content = {
     },
   ],
   hero: {
-    title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
+    title: "Web & Application",
+    subtitle: "Developer",
+    firstName: "AYAZ",
+    LastName: "QADRI",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
-        text: "Years of Experinse in Web development",
+        count: "2+",
+        text: "Years of Experinse in Web & Application development",
       },
       {
-        count: "20+",
+        count: "10+",
         text: "Projects Worked in my career",
       },
     ],
@@ -79,34 +86,69 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "React JS",
+        para: "JavaScript library for building user interfaces.",
+        logo: reactLogo,
       },
       {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
+        name: "React Native",
+        para: "Build native mobile apps using React.",
+        logo: reactLogo,
       },
       {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        name: "Next JS",
+        para: "React framework for production-ready web applications.",
+        logo: nextLogo,
       },
       {
-        name: "React js",
-        para: "Lorem ipsum text  dummy",
-        logo: reactjs,
+        name: "Laravel",
+        para: "PHP web application framework for artisans.",
+        logo: laravelLogo,
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        name: "Redux",
+        para: "A predictable state container for JavaScript apps.",
+        logo: reduxLogo,
       },
       {
-        name: "Python",
-        para: "Lorem ipsum text  dummy",
-        logo: python,
+        name: "Redux toolkit",
+        para: "The official, opinionated, batteries-included toolset for efficient Redux development.",
+        logo: reduxLogo,
+      },
+      {
+        name: "Tailwind CSS",
+        para: "A utility-first CSS framework for rapid UI development.",
+        logo: tailwindcssLogo,
+      },
+      {
+        name: "Material UI",
+        para: "React components for faster and easier web development.",
+        logo: materialuiLogo,
+      },
+      {
+        name: "Git",
+        para: "Distributed version control system for software development.",
+        logo: gitLogo,
+      },
+      {
+        name: "GitHub",
+        para: "A web-based hosting service for version control and collaboration using Git.",
+        logo: githubLogo,
+      },
+      {
+        name: "Bitbucket",
+        para: "A web-based version control repository hosting service for Git and Mercurial.",
+        logo: bitbucketLogo,
+      },
+      {
+        name: "Sourcetree",
+        para: "A free Git and Mercurial desktop client for developers.",
+        logo: sourcetreeLogo,
+      },
+      {
+        name: "Atomic Structure",
+        para: "A methodology for designing and developing user interfaces based on independent, reusable components.",
+        logo: atomicStructureLogo,
       },
     ],
     icon: MdArrowForward,
