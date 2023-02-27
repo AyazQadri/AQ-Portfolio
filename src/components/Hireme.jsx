@@ -5,7 +5,7 @@ const Hireme = () => {
 
   return (
     <section className="bg-bg_light_primary">
-      <div className="md:container px-5 pt-14">
+      <div className="md:container px-5 pt-14 pb-10">
         <h2 className="title" data-aos="fade-down">
           {Hireme.title}
         </h2>
@@ -28,7 +28,7 @@ const Hireme = () => {
           />
           <div
             data-aos="fade-left"
-            className="border-2 border-dark_primary max-w-sm
+            className="border-2 border-dark_primary max-w-xl
            p-6 shadow-sm rounded-xl rounded-br-[8rem] sm:min-w-[22rem]"
           >
             <p className="leading-7">{Hireme.para}</p>

@@ -43,8 +43,10 @@ const Contact = () => {
         <br />
         <div className="flex gap-10 md:flex-row flex-col">
           <form
-            ref={form}
-            onSubmit={sendEmail}
+            // ref={form}
+            action="https://getform.io/f/69178f9b-ebf9-4ccd-81a2-3c56ed8081a1" 
+            method="POST"
+            // onSubmit={sendEmail}
             data-aos="fade-up"
             className="flex-1 flex flex-col gap-5"
           >
@@ -85,8 +87,8 @@ const Contact = () => {
                 data-aos-delay={i * 430}
                 className="flex items-center gap-2"
               >
-                <h4 className="text-white">{createElement(content.icon)}</h4>
-                <a className="font-Poppins" href={content.link} target="_blank">
+                <a className="font-Poppins flex items-center" href={content.link} target="_blank">
+                <h4 className="text-white pr-2">{createElement(content.icon)}</h4>
                   {content.text}
                 </a>
               </div>

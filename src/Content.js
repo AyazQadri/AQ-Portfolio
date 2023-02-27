@@ -12,7 +12,8 @@ import bitbucketLogo from './assets/images/Skills/bitbucketlogo.png';
 import materialuiLogo from './assets/images/Skills/materiallogo.png';
 import reduxLogo from './assets/images/Skills/reduxlogo.png';
 import tailwindcssLogo from './assets/images/Skills/tailwindlogo.png';
-
+import seoLogo from './assets/images/Skills/seoLogo.png';
+import firebaseLogo from './assets/images/Skills/firebaseLogo.png';
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -34,8 +35,10 @@ import Hireme_person2 from "./assets/images/Hireme/person2.png";
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
+import { FaWhatsapp } from 'react-icons/fa';
 import { TbSmartHome } from "react-icons/tb";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
@@ -126,6 +129,16 @@ export const content = {
         logo: materialuiLogo,
       },
       {
+        name: "Firebase",
+        para: "Cloud Backend Solution and Chat Support (Realtime & Firestore)",
+        logo: firebaseLogo,
+      },
+      {
+        name: "Search Engine Optimization",
+        para: "Improve Online Visibility and Rankings.",
+        logo: seoLogo,
+      },
+      {
         name: "Git",
         para: "Distributed version control system for software development.",
         logo: gitLogo,
@@ -158,38 +171,118 @@ export const content = {
     subtitle: "WHAT I OFFER",
     service_content: [
       {
-        title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "Web Development & Search Engine Optimization (SEO)",
+        para: "As a Web Developer, I provide custom web development services that cater to the specific needs of businesses and individuals. My services include designing and developing custom websites, e-commerce websites, content management systems, responsive websites, web applications, and providing website maintenance and support. Additionally, I offer website hosting, domain registration, search engine optimization, and user experience and user interface design services to help clients establish and maintain a strong online presence.",
         logo: services_logo1,
       },
       {
-        title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "Application Development",
+        para: "As an application developer, I offer custom application development services that cater to the unique needs of businesses and individuals. My services include designing and developing custom applications, including mobile devices. I also provide application maintenance and support, application hosting, cross-platform application development, application security and data protection, integration with third-party services and APIs, and user experience and user interface design services to ensure that clients receive customized solutions that meet their specific requirements.",
         logo: services_logo2,
       },
       {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        title: "Backend (Laravel)",
+        para: "As a backend developer, I provide efficient and customized backend development services using Laravel framework, which include RESTful API development, database design and management, integration with third-party services and APIs, backend support and maintenance. Additionally, I offer quality data management and migration, performance optimization and scalability, security and data protection, code optimization and refactoring, and testing and quality assurance services. With my expertise in Laravel, I can deliver efficient and reliable backend solutions for web and application development projects.",
         logo: services_logo3,
       },
     ],
   },
+  workNavs: [
+    "All", "Web", "App",
+    //  "Design"
+  ],
+  workImages: [
+    {
+      id: 1,
+      img: project1,
+      name: "project 1",
+      category: "web"
+    },
+    {
+      id: 2,
+      img: project2,
+      name: "project 2",
+      category: "web"
+    },
+    {
+      id: 3,
+      img: project3,
+      name: "project 3",
+      category: "web"
+    },
+    {
+      id: 4,
+      img: project1,
+      name: "project 4",
+      category: "app"
+    },
+    {
+      id: 5,
+      img: project2,
+      name: "project 5",
+      category: 'app'
+    },
+    {
+      id: 6,
+      img: project3,
+      name: "project 6",
+      category: "design"
+    }
+  ],
   Projects: {
     title: "Projects",
     subtitle: "MY CREATION",
     image: person_project,
     project_content: [
       {
-        title: "Gym Website",
-        image: project1,
+        title: "HP Appen",
+        images: [project1, project2, project3],
+        category: "web"
       },
       {
-        title: "Social Media web",
-        image: project2,
+        title: "CoCircle",
+        images: [project1, project2, project3],
+        category: "web"
       },
       {
-        title: "Creative Website",
-        image: project3,
+        title: "CoCircle App",
+        images: [project1, project2, project3],
+        category: "app"
+      },
+      {
+        title: "Sthlmtechpartner",
+        images: [project1, project2, project3],
+        category: "web"
+      },
+      {
+        title: "Sapid",
+        images: [project1, project2, project3],
+        category: "app"
+      },
+      {
+        title: "Homeats Admin Panel",
+        images: [project1, project2, project3],
+        category: "web"
+      },
+      {
+        title: "Sanai Parents App",
+        images: [project1, project2, project3],
+        category: "app"
+      },
+      {
+        title: "Kamaee",
+        images: [project1, project2, project3],
+        category: "web"
+      },
+      {
+        title: "Kamaee App",
+        images: [project1, project2, project3],
+        category: "app"
+      },
+      {
+        title: "Kamaee Admin Panel",
+        images: [project1, project2, project3],
+        category: "web"
       },
     ],
   },
@@ -228,7 +321,7 @@ export const content = {
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+    para: "With years of experience in web and application development, I am committed to delivering high-quality solutions that meet the unique needs of my clients. My expertise includes custom website and application development, backend development using Laravel, and cloud-based backend solutions using Firebase. I also offer a range of services, including search engine optimization, user interface and user experience design, and maintenance and support. With a focus on reliability, efficiency, and customer satisfaction, I am dedicated to providing customized solutions that meet the specific requirements of each project.",
     btnText: "Hire Me",
   },
   Contact: {
@@ -236,19 +329,29 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "codeaprogram@gmail.com",
+        text: "ayazqadri111@gmail.com",
         icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
+        link: "mailto:ayazqadri111@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+92 310 0401601",
+        icon: FaWhatsapp,
+        link: "https://wa.me/+923100401601",
+      },
+      {
+        text: "+92 307 0401601",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "tel:+923070401601",
       },
       {
-        text: "codeaprogram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
+        text: "",
+        icon: FaGithub,
+        link: "https://github.com/AyazQadri/",
+      },
+      {
+        text: "",
+        icon: FaLinkedin,
+        link: "https://www.linkedin.com/in/ayaz-qadri-298128154/",
       },
     ],
   },

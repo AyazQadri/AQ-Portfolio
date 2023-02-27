@@ -103,7 +103,7 @@ const Skills = () => {
                   }}
                   className="text-xl absolute top-3 right-3"
                 >
-                  {createElement(skills.icon)}
+                  {/* {createElement(skills.icon)} */}
                 </div>
               </div>
             </div>
