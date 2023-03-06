@@ -31,6 +31,7 @@ import avatar4 from "./assets/images/Testimonials/avatar4.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
+import two from './assets/images/Hero/8.jpeg';
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -42,6 +43,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
+import one from './assets/images/Hero/1.jpeg'
 
 export const content = {
   nav: [

@@ -62,14 +62,14 @@ const Projects = () => {
         })}
       </motion.div>
         </div>
-        <div className="">
-        <motion.div
+        <div className="mt-5 w-full flex flex-wrap justify-evenly">
+        {/* <motion.div
         initial={{x: [-50] ,opacity: 0}}
         whileInView={{ x: [-250,0], opacity: 1 }}
         transition={{ duration: 1 }}
         exit={{opacity: 0, x: -50}}
         className="mt-5 w-full flex flex-wrap justify-evenly"
-      >
+      > */}
         {
           projects && projects.length > 0 && projects?.map((item, i) => {
             return (
@@ -133,7 +133,7 @@ const Projects = () => {
             </div>
           )
         })} */}
-      </motion.div>
+      {/* </motion.div> */}
         </div>
         {/* <div className="flex items-center lg:flex-row flex-col-reverse gap-5">
           <img
