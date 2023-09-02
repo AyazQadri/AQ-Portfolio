@@ -1,4 +1,4 @@
-import { createElement, useRef } from "react";
+import React, { createElement, useRef }  from "react";
 import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
@@ -7,27 +7,23 @@ const Contact = () => {
   const { Contact } = content;
   const form = useRef();
 
-  // Sending Email
+  const publicKey = "u9AurBtRmlod7LzmB";
+  const serviceId = "service_1edn8tj";
+  const templateId = "template_88r8qfj";
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          // Clear all input field values
-          form.current.reset();
-          // Success toast message
-          toast.success("Email send Successfully");
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error(error.text);
-        }
-      );
+    emailjs?.sendForm(serviceId, templateId, form.current, publicKey)?.then(
+      (result) => {
+        console.log(result.text);
+        form.current.reset();
+        toast.success("Email send Successfully");
+      },
+      (error) => {
+        console.log(error.text);
+        toast.error(error.text);
+      }
+    );
   };
 
   return (
@@ -43,14 +39,13 @@ const Contact = () => {
         <br />
         <div className="flex gap-10 md:flex-row flex-col">
           <form
-            // ref={form}
-            action="https://getform.io/f/69178f9b-ebf9-4ccd-81a2-3c56ed8081a1" 
-            method="POST"
-            // onSubmit={sendEmail}
+            ref={form}
+            // action="https://getform.io/f/69178f9b-ebf9-4ccd-81a2-3c56ed8081a1"
+            // method="POST"
+            onSubmit={sendEmail}
             data-aos="fade-up"
             className="flex-1 flex flex-col gap-5"
           >
-            {/* Input Name as same as email js templates values */}
             <input
               type="text"
               name="from_name"
@@ -87,8 +82,14 @@ const Contact = () => {
                 data-aos-delay={i * 430}
                 className="flex items-center gap-2"
               >
-                <a className="font-Poppins flex items-center" href={content.link} target="_blank">
-                <h4 className="text-white pr-2">{createElement(content.icon)}</h4>
+                <a
+                  className="font-Poppins flex items-center"
+                  href={content.link}
+                  target="_blank"
+                >
+                  <h4 className="text-white pr-2">
+                    {createElement(content.icon)}
+                  </h4>
                   {content.text}
                 </a>
               </div>

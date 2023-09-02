@@ -31,7 +31,7 @@ import avatar4 from "./assets/images/Testimonials/avatar4.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
-import two from './assets/images/Hero/8.jpeg';
+// import two from './assets/images/Hero/8.jpeg';
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -43,7 +43,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
-import one from './assets/images/Hero/1.jpeg'
+// import one from './assets/images/Hero/1.jpeg'
 
 export const content = {
   nav: [
@@ -91,81 +91,167 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "React JS",
-        para: "JavaScript library for building user interfaces.",
-        logo: reactLogo,
+        id: 1,
+        lang_name: 'React Native',
+        icon: "https://img.icons8.com/color/48/null/react-native.png",
+        exp_level: 'Experienced'
       },
       {
-        name: "React Native",
-        para: "Build native mobile apps using React.",
-        logo: reactLogo,
+        id: 2,
+        lang_name: 'React JS',
+        icon: "https://img.icons8.com/color/48/null/react-native.png",
+        exp_level: 'Experienced'
       },
       {
-        name: "Next JS",
-        para: "React framework for production-ready web applications.",
-        logo: nextLogo,
+        id: 3,
+        lang_name: 'Typescript',
+        icon: "https://avatars.githubusercontent.com/u/46634674?v=4&s=160",
+        exp_level: 'Experienced'
       },
       {
-        name: "Laravel",
-        para: "PHP web application framework for artisans.",
-        logo: laravelLogo,
+        id: 4,
+        lang_name: 'Redux',
+        icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png",
+        exp_level: 'Experienced'
       },
       {
-        name: "Redux",
-        para: "A predictable state container for JavaScript apps.",
-        logo: reduxLogo,
+        id: 5,
+        lang_name: 'JavaScript',
+        icon: "https://img.icons8.com/color/48/null/javascript--v1.png",
+        exp_level: 'Experienced'
       },
       {
-        name: "Redux toolkit",
-        para: "The official, opinionated, batteries-included toolset for efficient Redux development.",
-        logo: reduxLogo,
+        id: 6,
+        lang_name: 'Git',
+        icon: "https://img.icons8.com/color/48/null/git.png",
+        exp_level: 'Experienced'
       },
       {
-        name: "Tailwind CSS",
-        para: "A utility-first CSS framework for rapid UI development.",
-        logo: tailwindcssLogo,
+        id: 7,
+        lang_name: 'CI/CD',
+        icon: "https://static-00.iconduck.com/assets.00/cicd-icon-510x512-hsx603wg.png",
+        exp_level: 'Experienced'
       },
       {
-        name: "Material UI",
-        para: "React components for faster and easier web development.",
-        logo: materialuiLogo,
+        id: 8,
+        lang_name: 'Jira',
+        icon: "https://wac-cdn.atlassian.com/dam/jcr:e0cedee5-a180-40ad-b7c3-a66d6e60f483/jira-app-adg3.svg?cdnVersion=1124",
+        exp_level: 'Experienced'
       },
       {
-        name: "Firebase",
-        para: "Cloud Backend Solution and Chat Support (Realtime & Firestore)",
-        logo: firebaseLogo,
+        id: 9,
+        lang_name: 'Laravel',
+        icon: laravelLogo,
+        exp_level: 'Intermediate'
       },
       {
-        name: "Search Engine Optimization",
-        para: "Improve Online Visibility and Rankings.",
-        logo: seoLogo,
+        id: 10, 
+        lang_name: "Firebase",
+        icon: firebaseLogo,
+        exp_level: "Intermediate"
       },
       {
-        name: "Git",
-        para: "Distributed version control system for software development.",
-        logo: gitLogo,
+        id: 11, 
+        lang_name: "Tailwind CSS",
+        icon: tailwindcssLogo,
+        exp_level: "Experienced"
       },
       {
-        name: "GitHub",
-        para: "A web-based hosting service for version control and collaboration using Git.",
-        logo: githubLogo,
+        id: 12, 
+        lang_name: "Material UI",
+        icon: materialuiLogo,
+        exp_level: "Experienced"
       },
       {
-        name: "Bitbucket",
-        para: "A web-based version control repository hosting service for Git and Mercurial.",
-        logo: bitbucketLogo,
+        id: 13, 
+        lang_name: "Atomic Structure",
+        icon: atomicStructureLogo,
+        exp_level: "Experienced"
       },
       {
-        name: "Sourcetree",
-        para: "A free Git and Mercurial desktop client for developers.",
-        logo: sourcetreeLogo,
-      },
-      {
-        name: "Atomic Structure",
-        para: "A methodology for designing and developing user interfaces based on independent, reusable components.",
-        logo: atomicStructureLogo,
+        id: 14,
+        lang_name: "Next JS",
+        icon: nextLogo,
+        exp_level: "Intermediate"
       },
     ],
+    // [
+    //   {
+    //     name: "React JS",
+    //     para: "JavaScript library for building user interfaces.",
+    //     logo: reactLogo,
+    //   },
+    //   {
+    //     name: "React Native",
+    //     para: "Build native mobile apps using React.",
+    //     logo: reactLogo,
+    //   },
+    //   {
+    //     name: "Next JS",
+    //     para: "React framework for production-ready web applications.",
+    //     logo: nextLogo,
+    //   },
+    //   {
+    //     name: "Laravel",
+    //     para: "PHP web application framework for artisans.",
+    //     logo: laravelLogo,
+    //   },
+    //   {
+    //     name: "Redux",
+    //     para: "A predictable state container for JavaScript apps.",
+    //     logo: reduxLogo,
+    //   },
+    //   {
+    //     name: "Redux toolkit",
+    //     para: "The official, opinionated, batteries-included toolset for efficient Redux development.",
+    //     logo: reduxLogo,
+    //   },
+    //   {
+    //     name: "Tailwind CSS",
+    //     para: "A utility-first CSS framework for rapid UI development.",
+    //     logo: tailwindcssLogo,
+    //   },
+    //   {
+    //     name: "Material UI",
+    //     para: "React components for faster and easier web development.",
+    //     logo: materialuiLogo,
+    //   },
+    //   {
+    //     name: "Firebase",
+    //     para: "Cloud Backend Solution and Chat Support (Realtime & Firestore)",
+    //     logo: firebaseLogo,
+    //   },
+    //   {
+    //     name: "Search Engine Optimization",
+    //     para: "Improve Online Visibility and Rankings.",
+    //     logo: seoLogo,
+    //   },
+    //   {
+    //     name: "Git",
+    //     para: "Distributed version control system for software development.",
+    //     logo: gitLogo,
+    //   },
+    //   {
+    //     name: "GitHub",
+    //     para: "A web-based hosting service for version control and collaboration using Git.",
+    //     logo: githubLogo,
+    //   },
+    //   {
+    //     name: "Bitbucket",
+    //     para: "A web-based version control repository hosting service for Git and Mercurial.",
+    //     logo: bitbucketLogo,
+    //   },
+    //   {
+    //     name: "Sourcetree",
+    //     para: "A free Git and Mercurial desktop client for developers.",
+    //     logo: sourcetreeLogo,
+    //   },
+    //   {
+    //     name: "Atomic Structure",
+    //     para: "A methodology for designing and developing user interfaces based on independent, reusable components.",
+    //     logo: atomicStructureLogo,
+    //   },
+    // ],
     icon: MdArrowForward,
   },
   services: {
@@ -173,18 +259,18 @@ export const content = {
     subtitle: "WHAT I OFFER",
     service_content: [
       {
-        title: "Web Development & Search Engine Optimization (SEO)",
-        para: "As a Web Developer, I provide custom web development services that cater to the specific needs of businesses and individuals. My services include designing and developing custom websites, e-commerce websites, content management systems, responsive websites, web applications, and providing website maintenance and support. Additionally, I offer website hosting, domain registration, search engine optimization, and user experience and user interface design services to help clients establish and maintain a strong online presence.",
-        logo: services_logo1,
-      },
-      {
         title: "Application Development",
-        para: "As an application developer, I offer custom application development services that cater to the unique needs of businesses and individuals. My services include designing and developing custom applications, including mobile devices. I also provide application maintenance and support, application hosting, cross-platform application development, application security and data protection, integration with third-party services and APIs, and user experience and user interface design services to ensure that clients receive customized solutions that meet their specific requirements.",
+        para: "I specialize in custom application development, including mobile apps. I also provide maintenance, hosting, security, and integration services, ensuring tailored solutions for businesses and individuals.",
         logo: services_logo2,
       },
       {
-        title: "Backend (Laravel)",
-        para: "As a backend developer, I provide efficient and customized backend development services using Laravel framework, which include RESTful API development, database design and management, integration with third-party services and APIs, backend support and maintenance. Additionally, I offer quality data management and migration, performance optimization and scalability, security and data protection, code optimization and refactoring, and testing and quality assurance services. With my expertise in Laravel, I can deliver efficient and reliable backend solutions for web and application development projects.",
+        title: "Web Development & Search Engine Optimization (SEO)",
+        para: "As a Web Developer, I create custom websites, e-commerce platforms, and web applications. I offer hosting, domain registration, SEO, and UI/UX design services, helping clients establish a strong online presence.",
+        logo: services_logo1,
+      },
+      {
+        title: "Backend",
+        para: "I offer efficient Laravel-based backend development & Firebase, including RESTful APIs, database management, and third-party integrations. Services include data management, performance optimization, security, code refactoring, and testing for reliable web and app backends.",
         logo: services_logo3,
       },
     ],
@@ -238,53 +324,63 @@ export const content = {
     project_content: [
       {
         title: "HP Appen",
-        images: [project1, project2, project3],
-        category: "web"
+        image: project1,
+        category: "web",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects,'
       },
       {
         title: "CoCircle",
-        images: [project1, project2, project3],
-        category: "web"
+        image: project2,
+        category: "web",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
       },
       {
         title: "CoCircle App",
-        images: [project1, project2, project3],
-        category: "app"
+        image: project3,
+        category: "app",
+        description: 'This is the description of my projects, This is the description of my projectsm, This is the description of my projects'
       },
       {
         title: "Sthlmtechpartner",
-        images: [project1, project2, project3],
-        category: "web"
+        image: project1,
+        category: "web",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
       },
       {
         title: "Sapid",
-        images: [project1, project2, project3],
-        category: "app"
+        image: project2,
+        category: "app",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
       },
       {
         title: "Homeats Admin Panel",
-        images: [project1, project2, project3],
-        category: "web"
+        image: project1,
+        category: "web",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
       },
       {
         title: "Sanai Parents App",
-        images: [project1, project2, project3],
-        category: "app"
+        image: project2,
+        category: "app",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
       },
       {
         title: "Kamaee",
-        images: [project1, project2, project3],
-        category: "web"
+        image: project2,
+        category: "web",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
       },
       {
         title: "Kamaee App",
-        images: [project1, project2, project3],
-        category: "app"
+        image: project2,
+        category: "app",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
       },
       {
         title: "Kamaee Admin Panel",
-        images: [project1, project2, project3],
-        category: "web"
+        image: project2,
+        category: "web",
+        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
       },
     ],
   },
@@ -323,7 +419,7 @@ export const content = {
     subtitle: "FOR YOUR PROJECTS",
     image1: Hireme_person,
     image2: Hireme_person2,
-    para: "With years of experience in web and application development, I am committed to delivering high-quality solutions that meet the unique needs of my clients. My expertise includes custom website and application development, backend development using Laravel, and cloud-based backend solutions using Firebase. I also offer a range of services, including search engine optimization, user interface and user experience design, and maintenance and support. With a focus on reliability, efficiency, and customer satisfaction, I am dedicated to providing customized solutions that meet the specific requirements of each project.",
+    para: "With years of experience in Web & Application development, I specialize in delivering tailored solutions that match my clients' distinct needs. My expertise covers custom website & app development, and cloud-based solutions using Firebase. I offer additional services such as SEO, UI/UX design, and ongoing support. My priority is delivering dependable, efficient, and client-centric solutions that precisely align with project requirements.",
     btnText: "Hire Me",
   },
   Contact: {
@@ -346,12 +442,12 @@ export const content = {
         link: "tel:+923070401601",
       },
       {
-        text: "",
+        text: "Github",
         icon: FaGithub,
         link: "https://github.com/AyazQadri/",
       },
       {
-        text: "",
+        text: "Linkedin",
         icon: FaLinkedin,
         link: "https://www.linkedin.com/in/ayaz-qadri-298128154/",
       },

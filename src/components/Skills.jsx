@@ -1,113 +1,84 @@
-// import content
-import { createElement, useState } from "react";
+import React from "react";
 import { content } from "../Content";
-// import modal package
-import Modal from "react-modal";
-
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    maxWidth: "23rem",
-    width: "90%",
-  },
-  overlay: {
-    padding: "2rem",
-  },
-};
-Modal.setAppElement("#root");
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./styles/styles.css";
 
 const Skills = () => {
+  const settings = {
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 440,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   const { skills } = content;
-  const [modalIsOpen, setIsOpen] = useState(false);
-  const [selectSkill, setSelectSkill] = useState(null);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
   return (
     <section className="min-h-fit bg-bg_light_primary" id="skills">
-      {/* modal */}
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
-      >
-        <div className="flex items-center gap-2">
-          <img className="h-10" src={selectSkill?.logo} alt="..." />
-          <h6>{selectSkill?.name}</h6>
-        </div>
-        <br />
-        <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit, ame.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur</li>
-          <li>
-            Lorem ipsum dolor sit, amet dolor sit, amet consectetur adipisicing.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad est
-            beatae quos rem.
-          </li>
-        </ul>
-        <br />
-        <div className="flex justify-end">
-          <button onClick={closeModal} className="btn">
-            Close
-          </button>
-        </div>
-      </Modal>
-
-      {/* content */}
-      <div className="md:container px-5  py-14">
-        <h2 className="title" data-aos="fade-down">
+      <div className="container px-5 py-14 mx-auto">
+        <h2
+          className="text-3xl sm:text-4xl md:text-5xl title"
+          data-aos="fade-down"
+        >
           {skills.title}
         </h2>
-        <h4 className="subtitle" data-aos="fade-down">
+        <h4
+          className="text-lg sm:text-xl md:text-2xl subtitle"
+          data-aos="fade-down"
+        >
           {skills.subtitle}
         </h4>
         <br />
         <div className="flex flex-wrap gap-4 justify-center">
-          {skills.skills_content.map((skill, i) => (
-            <div
-              key={i}
-              data-aos="fade-up"
-              data-aos-delay={i * 400}
-              className="bg-white sm:cursor-pointer 
-               relative group w-full flex items-center
-                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
-            >
-              <div>
-                <img
-                  src={skill.logo}
-                  alt="..."
-                  className="w-10 group-hover:scale-125 duration-200"
-                />
-              </div>
-              <div>
-                <h6>{skill.name}</h6>
-                <p className="italic">{skill.para}</p>
+          <div className="w-full">
+            <Slider {...settings}>
+              {skills.skills_content.map((skill, i) => (
                 <div
-                  onClick={() => {
-                    setSelectSkill(skill);
-                    openModal();
-                  }}
-                  className="text-xl absolute top-3 right-3"
+                  className="mylang gap-2"
+                  title={skill.lang_name}
+                  key={skill.id}
                 >
-                  {/* {createElement(skills.icon)} */}
+                  <div className="lang-info">
+                    <div className="lang-img bg-gray-300 rounded-full w-16 h-16 flex justify-center items-center">
+                      <img src={skill.icon} alt="" className="rounded-full" />
+                    </div>
+                    <h3 className="text-lg sm:text-xl md:text-2xl mt-2">
+                      {skill.lang_name}
+                    </h3>
+                    <p
+                      className={`${skill.exp_level} text-sm sm:text-base md:text-lg mb-2 btn bg-dark_primary text-white sm:mt-0 cursor-pointer`}
+                      // className="mb-2 btn bg-dark_primary text-white sm:mt-0 mt-10 cursor-pointer"
+                    >
+                      {skill.exp_level}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </section>
