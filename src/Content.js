@@ -3,17 +3,18 @@ import Hero_person from "./assets/images/Hero/person.png";
 
 import atomicStructureLogo from "./assets/images/Skills/sketch.png";
 import reactLogo from "./assets/images/Skills/react.png";
-import laravelLogo from './assets/images/Skills/laravellogo.png';
-import nextLogo from './assets/images/Skills/next-logo.png';
-import sourcetreeLogo from './assets/images/Skills/sourcetreelogo.png';
-import githubLogo from './assets/images/Skills/githublogo.png';
-import gitLogo from './assets/images/Skills/gitlogo.png';
-import bitbucketLogo from './assets/images/Skills/bitbucketlogo.png';
-import materialuiLogo from './assets/images/Skills/materiallogo.png';
-import reduxLogo from './assets/images/Skills/reduxlogo.png';
-import tailwindcssLogo from './assets/images/Skills/tailwindlogo.png';
-import seoLogo from './assets/images/Skills/seoLogo.png';
-import firebaseLogo from './assets/images/Skills/firebaseLogo.png';
+import laravelLogo from "./assets/images/Skills/laravellogo.png";
+import nextLogo from "./assets/images/Skills/next-logo.png";
+import sourcetreeLogo from "./assets/images/Skills/sourcetreelogo.png";
+import githubLogo from "./assets/images/Skills/githublogo.png";
+import gitLogo from "./assets/images/Skills/gitlogo.png";
+import bitbucketLogo from "./assets/images/Skills/bitbucketlogo.png";
+import materialuiLogo from "./assets/images/Skills/materiallogo.png";
+import reduxLogo from "./assets/images/Skills/reduxlogo.png";
+import tailwindcssLogo from "./assets/images/Skills/tailwindlogo.png";
+import seoLogo from "./assets/images/Skills/seoLogo.png";
+import firebaseLogo from "./assets/images/Skills/firebaseLogo.png";
+import CICD from './assets/images/Skills/cicd.png'
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -36,14 +37,30 @@ import Hireme_person2 from "./assets/images/Hireme/person2.png";
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall } from "react-icons/md";
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from "react-icons/fa";
 import { TbSmartHome } from "react-icons/tb";
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
-// import one from './assets/images/Hero/1.jpeg'
+
+// import applications images
+import Wyzepay from "./assets/images/Projects/wyzepay.jpg";
+import BetYouCan from "./assets/images/Projects/alarmclock.jpg";
+import CCApp from "./assets/images/Projects/kamaeeapp.jpg";
+import KamaeeApp from "./assets/images/Projects/kamaeeapp.jpg";
+import MoodApp from "./assets/images/Projects/mood.jpg";
+import SanaiParents from "./assets/images/Projects/sanaiparents.jpg";
+import SanaiTeacher from "./assets/images/Projects/sanaiteacher.jpg";
+
+// import websites images
+import FemClinic from "./assets/images/Projects/femclinic.jpg";
+import HpAppen from "./assets/images/Projects/hpAppen.jpg";
+import Homeats from "./assets/images/Projects/homeats.jpg";
+import CoCircle from "./assets/images/Projects/cocircle.jpg";
+import Sapid from "./assets/images/Projects/sapid.jpg";
+import Sthlm from "./assets/images/Projects/sthlm.jpg";
 
 export const content = {
   nav: [
@@ -69,7 +86,7 @@ export const content = {
     },
   ],
   hero: {
-    title: "Web & Application",
+    title: "Website & Application",
     subtitle: "Developer",
     firstName: "AYAZ",
     LastName: "QADRI",
@@ -77,11 +94,11 @@ export const content = {
     image: Hero_person,
     hero_content: [
       {
-        count: "2+",
+        count: "3+",
         text: "Years of Experinse in Web & Application development",
       },
       {
-        count: "10+",
+        count: "12+",
         text: "Projects Worked in my career",
       },
     ],
@@ -92,166 +109,95 @@ export const content = {
     skills_content: [
       {
         id: 1,
-        lang_name: 'React Native',
+        lang_name: "React Native",
         icon: "https://img.icons8.com/color/48/null/react-native.png",
-        exp_level: 'Experienced'
+        exp_level: "Experienced",
       },
       {
         id: 2,
-        lang_name: 'React JS',
+        lang_name: "React JS",
         icon: "https://img.icons8.com/color/48/null/react-native.png",
-        exp_level: 'Experienced'
+        exp_level: "Experienced",
       },
       {
         id: 3,
-        lang_name: 'Typescript',
+        lang_name: "Typescript",
         icon: "https://avatars.githubusercontent.com/u/46634674?v=4&s=160",
-        exp_level: 'Experienced'
+        exp_level: "Experienced",
       },
       {
         id: 4,
-        lang_name: 'Redux',
+        lang_name: "Redux",
         icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png",
-        exp_level: 'Experienced'
+        exp_level: "Experienced",
       },
       {
         id: 5,
-        lang_name: 'JavaScript',
+        lang_name: "JavaScript",
         icon: "https://img.icons8.com/color/48/null/javascript--v1.png",
-        exp_level: 'Experienced'
+        exp_level: "Experienced",
       },
       {
         id: 6,
-        lang_name: 'Git',
+        lang_name: "Git",
         icon: "https://img.icons8.com/color/48/null/git.png",
-        exp_level: 'Experienced'
+        exp_level: "Experienced",
       },
       {
         id: 7,
-        lang_name: 'CI/CD',
-        icon: "https://static-00.iconduck.com/assets.00/cicd-icon-510x512-hsx603wg.png",
-        exp_level: 'Experienced'
+        lang_name: "CI/CD",
+        icon: CICD,
+        exp_level: "Experienced",
       },
       {
         id: 8,
-        lang_name: 'Jira',
+        lang_name: "Jira",
         icon: "https://wac-cdn.atlassian.com/dam/jcr:e0cedee5-a180-40ad-b7c3-a66d6e60f483/jira-app-adg3.svg?cdnVersion=1124",
-        exp_level: 'Experienced'
+        exp_level: "Experienced",
       },
       {
         id: 9,
-        lang_name: 'Laravel',
+        lang_name: "Laravel",
         icon: laravelLogo,
-        exp_level: 'Intermediate'
+        exp_level: "Intermediate",
       },
       {
-        id: 10, 
+        id: 10,
         lang_name: "Firebase",
         icon: firebaseLogo,
-        exp_level: "Intermediate"
+        exp_level: "Intermediate",
       },
       {
-        id: 11, 
+        id: 11,
         lang_name: "Tailwind CSS",
         icon: tailwindcssLogo,
-        exp_level: "Experienced"
+        exp_level: "Experienced",
       },
       {
-        id: 12, 
+        id: 12,
         lang_name: "Material UI",
         icon: materialuiLogo,
-        exp_level: "Experienced"
+        exp_level: "Experienced",
       },
       {
-        id: 13, 
+        id: 13,
         lang_name: "Atomic Structure",
         icon: atomicStructureLogo,
-        exp_level: "Experienced"
+        exp_level: "Experienced",
       },
       {
         id: 14,
         lang_name: "Next JS",
         icon: nextLogo,
-        exp_level: "Intermediate"
+        exp_level: "Intermediate",
+      },
+      {
+        id: 15,
+        lang_name: "SEO",
+        icon: seoLogo,
+        exp_level: "Experienced",
       },
     ],
-    // [
-    //   {
-    //     name: "React JS",
-    //     para: "JavaScript library for building user interfaces.",
-    //     logo: reactLogo,
-    //   },
-    //   {
-    //     name: "React Native",
-    //     para: "Build native mobile apps using React.",
-    //     logo: reactLogo,
-    //   },
-    //   {
-    //     name: "Next JS",
-    //     para: "React framework for production-ready web applications.",
-    //     logo: nextLogo,
-    //   },
-    //   {
-    //     name: "Laravel",
-    //     para: "PHP web application framework for artisans.",
-    //     logo: laravelLogo,
-    //   },
-    //   {
-    //     name: "Redux",
-    //     para: "A predictable state container for JavaScript apps.",
-    //     logo: reduxLogo,
-    //   },
-    //   {
-    //     name: "Redux toolkit",
-    //     para: "The official, opinionated, batteries-included toolset for efficient Redux development.",
-    //     logo: reduxLogo,
-    //   },
-    //   {
-    //     name: "Tailwind CSS",
-    //     para: "A utility-first CSS framework for rapid UI development.",
-    //     logo: tailwindcssLogo,
-    //   },
-    //   {
-    //     name: "Material UI",
-    //     para: "React components for faster and easier web development.",
-    //     logo: materialuiLogo,
-    //   },
-    //   {
-    //     name: "Firebase",
-    //     para: "Cloud Backend Solution and Chat Support (Realtime & Firestore)",
-    //     logo: firebaseLogo,
-    //   },
-    //   {
-    //     name: "Search Engine Optimization",
-    //     para: "Improve Online Visibility and Rankings.",
-    //     logo: seoLogo,
-    //   },
-    //   {
-    //     name: "Git",
-    //     para: "Distributed version control system for software development.",
-    //     logo: gitLogo,
-    //   },
-    //   {
-    //     name: "GitHub",
-    //     para: "A web-based hosting service for version control and collaboration using Git.",
-    //     logo: githubLogo,
-    //   },
-    //   {
-    //     name: "Bitbucket",
-    //     para: "A web-based version control repository hosting service for Git and Mercurial.",
-    //     logo: bitbucketLogo,
-    //   },
-    //   {
-    //     name: "Sourcetree",
-    //     para: "A free Git and Mercurial desktop client for developers.",
-    //     logo: sourcetreeLogo,
-    //   },
-    //   {
-    //     name: "Atomic Structure",
-    //     para: "A methodology for designing and developing user interfaces based on independent, reusable components.",
-    //     logo: atomicStructureLogo,
-    //   },
-    // ],
     icon: MdArrowForward,
   },
   services: {
@@ -276,7 +222,9 @@ export const content = {
     ],
   },
   workNavs: [
-    "All", "Web", "App",
+    "All",
+    "Web",
+    "App",
     //  "Design"
   ],
   workImages: [
@@ -284,103 +232,166 @@ export const content = {
       id: 1,
       img: project1,
       name: "project 1",
-      category: "web"
+      category: "web",
     },
     {
       id: 2,
       img: project2,
       name: "project 2",
-      category: "web"
+      category: "web",
     },
     {
       id: 3,
       img: project3,
       name: "project 3",
-      category: "web"
+      category: "web",
     },
     {
       id: 4,
       img: project1,
       name: "project 4",
-      category: "app"
+      category: "app",
     },
     {
       id: 5,
       img: project2,
       name: "project 5",
-      category: 'app'
+      category: "app",
     },
     {
       id: 6,
       img: project3,
       name: "project 6",
-      category: "design"
-    }
+      category: "design",
+    },
   ],
   Projects: {
     title: "Projects",
     subtitle: "MY CREATION",
     image: person_project,
     project_content: [
+      // {
+      //   id: 1,
+      //   title: "HP Appen",
+      //   image: HpAppen,
+      //   category: "web",
+      //   description: `The HP app is committed to helping students excel in university examinations and attain their educational dreams. 
+      //   It provides a platform for students to test their skills with past exam papers, offering valuable preparation resources.`,
+      // },
+      // {
+      //   id: 2,
+      //   title: "CoCircle",
+      //   image: CoCircle,
+      //   category: "web",
+      //   description: `CoCircle admin panel serves as the central hub for efficiently managing co-working spaces and event venues. 
+      //   It boasts five distinct roles, enabling administrators to oversee bookings and streamline office operations seamlessly.`,
+      // },
       {
-        title: "HP Appen",
-        image: project1,
-        category: "web",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects,'
-      },
-      {
-        title: "CoCircle",
-        image: project2,
-        category: "web",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
-      },
-      {
+        id: 3,
         title: "CoCircle App",
-        image: project3,
+        image: CCApp,
         category: "app",
-        description: 'This is the description of my projects, This is the description of my projectsm, This is the description of my projects'
+        description: `The CoCircle application is tailored for clients to explore and book co-working spaces and event venues. 
+        It fosters collaboration within a diverse community of users, enhancing their experience.`,
       },
+      // {
+      //   id: 4,
+      //   title: "Sthlmtechpartner",
+      //   image: Sthlm,
+      //   category: "web",
+      //   description: `The Sthlmtech Partner business website serves as an online portfolio for the company, showcasing its expertise and offerings. 
+      //   This fully responsive web platform is designed to highlight the company's services, projects, and capabilities. It provides a professional online presence.`,
+      // },
+      // {
+      //   id: 5,
+      //   title: "FemClinic",
+      //   image: FemClinic,
+      //   category: "web",
+      //   description: `FemClinic is a digital platform that redefines women's healthcare, seamlessly blending conventional and holistic approaches. 
+      //   Patients can effortlessly schedule appointments and engage in audio/video consultations with experienced doctors.`,
+      // },
       {
-        title: "Sthlmtechpartner",
-        image: project1,
-        category: "web",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
-      },
-      {
-        title: "Sapid",
-        image: project2,
+        id: 5,
+        title: "Sapid App",
+        image: Sapid,
         category: "app",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
+        description: `Sapid simplifies contact sharing, generating unique IDs for users to share contact details and social media profiles via NFC or QR code. 
+        It streamlines personal and professional connections.`,
       },
+      // {
+      //   id: 6,
+      //   title: "Homeats Admin Panel",
+      //   image: Homeats,
+      //   category: "web",
+      //   description: `Homeats bridges the gap for those seeking healthy homemade food, connecting them with expert restaurants, 
+      //   home-cooked food producers, and professional chefs under the guidance of dieticians. It promotes a "HEALTHY FOOD FOR LIFE" philosophy.`,
+      // },
       {
-        title: "Homeats Admin Panel",
-        image: project1,
-        category: "web",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
-      },
-      {
-        title: "Sanai Parents App",
-        image: project2,
+        id: 7,
+        title: "Sanai Parents",
+        image: SanaiParents,
         category: "app",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
+        description: `Sanai Parents is an essential tool for parents of Sanai School students, providing a straightforward way to track their child's academic 
+        progress and daily activities. It includes progress tracking, homework management, assignment submissions, communication, and timely announcements.`,
       },
       {
+        id: 8,
+        title: "Sanai Teacher",
+        image: SanaiTeacher,
+        category: "app",
+        description: `Sanai Teacher streamlines educators' daily tasks at Sanai School with features like attendance tracking, progress monitoring, 
+        homework management, assignment submissions, communication, and access to salary and result details.`,
+      },
+      {
+        id: 9,
         title: "Kamaee",
         image: project2,
         category: "web",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
+        description: `KAMAEE is a versatile platform, akin to Fiverr, offering services ranging from electricians to tailors. 
+        It features an admin panel and chat functionality, facilitating connections between non-IT workers and clients.`,
       },
       {
+        id: 10,
         title: "Kamaee App",
-        image: project2,
+        image: KamaeeApp,
         category: "app",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
+        description: `I had the privilege of contributing to Project Kamaee, a pivotal initiative by SecureHops dedicated to empowering women to achieve 
+        their full potential in their chosen fields. This project aimed to provide women with the necessary tools, skills, and resources essential 
+        for their success.`,
       },
       {
+        id: 11,
         title: "Kamaee Admin Panel",
         image: project2,
         category: "web",
-        description: 'This is the description of my projects, This is the description of my projects, This is the description of my projects'
+        description: `The KAMAEE Admin panel oversee incoming orders from sellers and delegate these orders to sub-admins who, in turn, 
+        assign them to delivery personnel or riders. This panel enables comprehensive order tracking, offers the ability to edit blacklists, 
+        and provides various tools to facilitate seamless order management.`,
+      },
+      {
+        id: 12,
+        title: "BetYouCan",
+        image: BetYouCan,
+        category: "app",
+        description: `The Bet You Can application is a unique and innovative platform designed to cultivate early rising habits through a captivating 
+        financial incentive mechanism rooted in self-betting. Users have the autonomy to set their preferred wake-up times and designate specific days 
+        of the week for the challenge.`,
+      },
+      {
+        id: 13,
+        title: "WyzePay",
+        image: Wyzepay,
+        category: "app",
+        description: `WyzePay is an innovative prepayment app revolutionizing the shopping experience, offering discounts and convenience 
+        through payment integration, Google Maps, and more.`,
+      },
+      {
+        id: 14,
+        title: "Mood",
+        image: MoodApp,
+        category: "app",
+        description: `Mood Social gives you a full overview of things to do in your city. Find exciting activities, places and people based 
+        on what you ar e in the Mood for and experience them together.`,
       },
     ],
   },

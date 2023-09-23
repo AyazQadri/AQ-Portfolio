@@ -12,7 +12,7 @@ const Projects = () => {
   const [active, setActive] = useState(0);
   const [projects, setProjects] = useState([]);
   const { Projects, workNavs, workImages } = content;
-  const [slidesToShow, setSlidesToShow] = useState(3); // Default value for larger screens
+  const [slidesToShow, setSlidesToShow] = useState(3);
 
   useEffect(() => {
     if (tab.name === "all") {
@@ -33,7 +33,7 @@ const Projects = () => {
   const updateSlidesToShow = () => {
     if (window.innerWidth < 1024 && window.innerWidth > 640) {
       setSlidesToShow(2);
-    } else  if (window.innerWidth < 640 ) {
+    } else if (window.innerWidth < 640) {
       setSlidesToShow(1);
     } else {
       setSlidesToShow(3);
@@ -42,9 +42,9 @@ const Projects = () => {
 
   useEffect(() => {
     window.addEventListener("resize", updateSlidesToShow);
-    updateSlidesToShow(); // Call the function on initial load
+    updateSlidesToShow();
     return () => {
-      window.removeEventListener("resize", updateSlidesToShow); // Cleanup the event listener
+      window.removeEventListener("resize", updateSlidesToShow);
     };
   }, []);
 
@@ -91,18 +91,19 @@ const Projects = () => {
             })}
           </motion.div>
         </div>
+
+        {/* 
         <div className="mt-5 w-full flex flex-wrap justify-evenly">
           <div className="w-full">
-            <Slider
-              {...settings}
-              swipeToSlide
-              slidesToShow={slidesToShow} 
-            >
+            <Slider {...settings} swipeToSlide slidesToShow={slidesToShow}>
               {projects.map((pro) => (
-                <div key={pro.id} className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 my-8">
+                <div
+                  key={pro.id}
+                  className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                >
                   <article className="bg-white p-5 rounded-lg shadow-md transition-transform hover:scale-105 mx-2">
-                    <div className="rounded-t-lg overflow-hidden">
-                      <img src={pro.image} alt={pro.title} className="w-full" />
+                    <div className="rounded-t-lg overflow-hidden h-72">
+                      <img src={pro.image} alt={pro.title} className="w-full h-full" />
                     </div>
                     <div className="p-4">
                       <h3 className="text-xl font-semibold">{pro.title}</h3>
@@ -114,7 +115,76 @@ const Projects = () => {
               ))}
             </Slider>
           </div>
-        </div>
+        </div> */}
+
+        {/* <div className="mt-5 w-full flex flex-wrap justify-evenly">
+          <div className="w-full">
+            <Slider {...settings} swipeToSlide slidesToShow={slidesToShow}>
+              {projects?.map((item) => {
+                return (
+                  <div className="grid-cols-1 sm:grid md:grid-cols-2 ">
+                    <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+                      <a href="#!">
+                        <img
+                          className="rounded-t-lg"
+                          src={item?.image}
+                          alt=""
+                        />
+                      </a>
+                      <div className="p-6">
+                        <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                          {item?.title}
+                        </h5>
+                        <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                          {item?.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </Slider>
+          </div>
+        </div> */}
+
+<div className="mt-5 w-full flex flex-wrap justify-evenly">
+  <div className="w-full">
+    <Slider {...settings} swipeToSlide slidesToShow={slidesToShow}>
+      {projects?.map((item) => {
+        return (
+          <div className="grid-cols-1 sm:grid md:grid-cols-2 ">
+            <div className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+              <a href="#!">
+                <div
+                  className="overflow-hidden block relative"
+                  // style={{
+                  //   justifyContent: 'center',
+                  //   alignItems: 'center'
+                  // }}
+                >
+                  <img
+                    className="w-full inline-block border rounded-2xl p-15 transition-transform h-280 cursor-pointer transform scale-100 group-hover:scale-106 md:p-10"
+                    src={item?.image}
+                    alt=""
+                  />
+                </div>
+              </a>
+              <div className="p-6">
+                <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                  {item?.title}
+                </h5>
+                <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  {item?.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </Slider>
+  </div>
+</div>
+
         <motion.div
           initial={{ x: 0, opacity: 0 }}
           whileInView={{ x: [250, 0], opacity: 1 }}

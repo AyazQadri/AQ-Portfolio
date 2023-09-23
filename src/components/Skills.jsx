@@ -8,9 +8,9 @@ import "./styles/styles.css";
 const Skills = () => {
   const settings = {
     infinite: true,
-    speed: 2000,
+    speed: 10000,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    // slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     swipeToSlide: true,
@@ -46,7 +46,7 @@ const Skills = () => {
           {skills.title}
         </h2>
         <h4
-          className="text-lg sm:text-xl md:text-2xl subtitle"
+          className="text-lg sm:text-xl md:text-2xl subtitle mt-2"
           data-aos="fade-down"
         >
           {skills.subtitle}
