@@ -20,12 +20,15 @@ const Hireme = () => {
             data-aos="fade-right"
             className="max-w-sm md:block hidden"
           />
-          <img
+          {/* <img
             src={Hireme.image2}
             data-aos="fade-up"
             alt="..."
             className="max-w-sm md:hidden"
-          />
+            style={{
+              marginTop: "-120px"
+            }}
+          /> */}
           <div
             data-aos="fade-left"
             className="border-2 border-dark_primary max-w-xl
@@ -34,9 +37,7 @@ const Hireme = () => {
             <p className="leading-7">{Hireme.para}</p>
             <br />
             <button className="btn bg-dark_primary text-white">
-            <a href="#contact">
-              {Hireme.btnText}
-            </a>
+              <a href="#contact">{Hireme.btnText}</a>
             </button>
           </div>
         </div>

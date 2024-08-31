@@ -17,11 +17,11 @@ const App = () => {
     Aos.init({
       duration: 1800,
       offset: 100,
-      disable: "mobile",
+      disable: "mobile"
     });
   }, []);
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <Skills />
@@ -32,7 +32,9 @@ const App = () => {
       <Contact />
       <footer className="p-3 text-center">
         <h6 className="mb-3">AYAZ QADRI</h6>
-        <p><span className="font-bold">Contact:</span> ayazqadri111@gmail.com</p>
+        <p>
+          <span className="font-bold">Contact:</span> ayazqadri111@gmail.com
+        </p>
       </footer>
     </div>
   );
