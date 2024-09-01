@@ -9,11 +9,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/AQ-Portfolio/',
-  build: {
-    rollupOptions: {
-      external: ['/src/main.jsx'],
-    },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
+  base: '/AQ-Portfolio/',
 })
 
