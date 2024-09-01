@@ -8,12 +8,15 @@ import "./styles/styles.css";
 const Skills = () => {
   const settings = {
     infinite: true,
-    speed: 10000,
+    speed: 2000,  // Adjust speed for a smoother scroll
     slidesToShow: 6,
-    // slidesToScroll: 1,
+    slidesToScroll: 1,  // Scroll one slide at a time
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 0,  // Set to 0 for continuous scrolling
+    cssEase: "linear", // Ensures smooth scrolling
     swipeToSlide: true,
+    centerMode: true, // Optional: centers the active slide
+    centerPadding: "0", // Optional: adjust padding if needed
     responsive: [
       {
         breakpoint: 1024,
@@ -35,7 +38,9 @@ const Skills = () => {
       },
     ],
   };
+
   const { skills } = content;
+  
   return (
     <section className="min-h-fit bg-bg_light_primary" id="skills">
       <div className="container px-5 py-14 mx-auto">

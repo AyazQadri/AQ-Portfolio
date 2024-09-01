@@ -50,11 +50,17 @@ import { MdOutlinePermContactCalendar } from "react-icons/md";
 // import applications images
 import Wyzepay from "./assets/images/Projects/wyzepay.jpg";
 import BetYouCan from "./assets/images/Projects/alarmclock.jpg";
-import CCApp from "./assets/images/Projects/kamaeeapp.jpg";
+import CCApp from "./assets/images/Projects/CoCircle.png";
 import KamaeeApp from "./assets/images/Projects/kamaeeapp.jpg";
 import MoodApp from "./assets/images/Projects/mood.jpg";
 import SanaiParents from "./assets/images/Projects/sanaiparents.jpg";
 import SanaiTeacher from "./assets/images/Projects/sanaiteacher.jpg";
+import Ahlsell from "./assets/images/Projects/ahlsel.jpg";
+import Dometic from "./assets/images/Projects/Dometic.jpg";
+import Trusted from "./assets/images/Projects/trusted.jpg"
+import Vassla from "./assets/images/Projects/Vassla.png"
+import KamaeeAdmin from "./assets/images/Projects/kamaeeAdmin.png"
+import KamaeeLanding from './assets/images/Projects/kamaeeLanding.png'
 
 // import websites images
 import FemClinic from "./assets/images/Projects/femclinic.jpg";
@@ -83,6 +89,10 @@ export const content = {
       icon: RiProjectorLine
     },
     {
+      link: "#hireme",
+      icon: RiServiceLine
+    },
+    {
       link: "#contact",
       icon: MdOutlinePermContactCalendar
     }
@@ -96,11 +106,11 @@ export const content = {
     image: Hero_person,
     hero_content: [
       {
-        count: "3+",
+        count: "5+",
         text: "Years of Experinse in Web & Application development"
       },
       {
-        count: "12+",
+        count: "30+",
         text: "Projects Worked in my career"
       }
     ]
@@ -123,82 +133,102 @@ export const content = {
       },
       {
         id: 3,
+        lang_name: "Next JS",
+        icon: nextLogo,
+        exp_level: "Experienced"
+      },
+      {
+        id: 4,
+        lang_name: "Node JS",
+        icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg',
+        exp_level: "Experienced"
+      },
+      {
+        id: 5,
+        lang_name: "Laravel",
+        icon: laravelLogo,
+        exp_level: "Experienced"
+      },
+      {
+        id: 6,
         lang_name: "Typescript",
         icon: "https://avatars.githubusercontent.com/u/46634674?v=4&s=160",
         exp_level: "Experienced"
       },
       {
-        id: 4,
-        lang_name: "Redux",
-        icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png",
-        exp_level: "Experienced"
-      },
-      {
-        id: 5,
-        lang_name: "JavaScript",
-        icon: "https://img.icons8.com/color/48/null/javascript--v1.png",
-        exp_level: "Experienced"
-      },
-      {
-        id: 6,
-        lang_name: "Git",
-        icon: "https://img.icons8.com/color/48/null/git.png",
-        exp_level: "Experienced"
-      },
-      {
         id: 7,
+        lang_name: "Atomic Structure",
+        icon: atomicStructureLogo,
+        exp_level: "Experienced"
+      },
+      
+      {
+        id: 8,
         lang_name: "CI/CD",
         icon: CICD,
         exp_level: "Experienced"
       },
       {
-        id: 8,
+        id: 9,
+        lang_name: "Fastlane",
+        icon: `https://www.svgrepo.com/show/376368/fastlane.svg`,
+        exp_level: "Experienced"
+      },
+      {
+        id: 10,
+        lang_name: "Redux",
+        icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png",
+        exp_level: "Experienced"
+      },
+      {
+        id: 11,
+        lang_name: "Redux Saga/thunk",
+        icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png",
+        exp_level: "Experienced"
+      },
+      {
+        id: 12,
+        lang_name: "JavaScript",
+        icon: "https://img.icons8.com/color/48/null/javascript--v1.png",
+        exp_level: "Experienced"
+      },
+      {
+        id: 13,
         lang_name: "Jira",
         icon: "https://wac-cdn.atlassian.com/dam/jcr:e0cedee5-a180-40ad-b7c3-a66d6e60f483/jira-app-adg3.svg?cdnVersion=1124",
         exp_level: "Experienced"
       },
       {
-        id: 9,
-        lang_name: "Laravel",
-        icon: laravelLogo,
-        exp_level: "Intermediate"
-      },
-      {
-        id: 10,
+        id: 14,
         lang_name: "Firebase",
         icon: firebaseLogo,
-        exp_level: "Intermediate"
-      },
-      {
-        id: 11,
-        lang_name: "Tailwind CSS",
-        icon: tailwindcssLogo,
         exp_level: "Experienced"
-      },
-      {
-        id: 12,
-        lang_name: "Material UI",
-        icon: materialuiLogo,
-        exp_level: "Experienced"
-      },
-      {
-        id: 13,
-        lang_name: "Atomic Structure",
-        icon: atomicStructureLogo,
-        exp_level: "Experienced"
-      },
-      {
-        id: 14,
-        lang_name: "Next JS",
-        icon: nextLogo,
-        exp_level: "Intermediate"
       },
       {
         id: 15,
         lang_name: "SEO",
         icon: seoLogo,
         exp_level: "Experienced"
-      }
+      },
+      {
+        id: 16,
+        lang_name: "Git",
+        icon: "https://img.icons8.com/color/48/null/git.png",
+        exp_level: "Experienced"
+      },
+      {
+        id: 17,
+        lang_name: "Tailwind CSS",
+        icon: tailwindcssLogo,
+        exp_level: "Experienced"
+      },
+      {
+        id: 18,
+        lang_name: "Material UI",
+        icon: materialuiLogo,
+        exp_level: "Experienced"
+      },
+     
     ],
     icon: MdArrowForward
   },
@@ -208,17 +238,17 @@ export const content = {
     service_content: [
       {
         title: "Application Development",
-        para: "I specialize in custom application development, including mobile apps. I also provide maintenance, hosting, security, and integration services, ensuring tailored solutions for businesses and individuals.",
+        para: "I specialize in developing custom mobile applications using React Native, delivering cross-platform solutions for both iOS and Android. My services cover the entire app lifecycle, from initial design to deployment, ensuring your app is user-friendly, performant, and scalable. I also provide ongoing maintenance, and seamless integration with APIs and third-party services, delivering tailored solutions for businesses and individuals. Whether starting a new project or enhancing an existing app, I ensure high-quality, efficient, and cost-effective results.",
         logo: services_logo2
       },
       {
         title: "Web Development & Search Engine Optimization (SEO)",
-        para: "As a Web Developer, I create custom websites, e-commerce platforms, and web applications. I offer hosting, domain registration, SEO, and UI/UX design services, helping clients establish a strong online presence.",
+        para: "I create dynamic and responsive websites, e-commerce platforms, and web applications using React.js and Next.js. My services include designing modern user interfaces, optimizing user experiences, and implementing server-side rendering with Next.js for improved performance and SEO. Additionally, I offer secure hosting, domain registration, and advanced SEO strategies to ensure your site ranks well in search engines. By leveraging the latest in web development technologies, I help clients build and maintain a strong, effective online presence.",
         logo: services_logo1
       },
       {
         title: "Backend",
-        para: "I offer efficient Laravel-based backend development & Firebase, including RESTful APIs, database management, and third-party integrations. Services include data management, performance optimization, security, code refactoring, and testing for reliable web and app backends.",
+        para: "I offer efficient backend development using Node.js, NestJS, Laravel, and Firebase, providing scalable and secure solutions for web and mobile applications. My expertise includes developing RESTful APIs, managing databases with tools like Eloquent ORM, and integrating third-party services to enhance your application's functionality. I focus on optimizing performance, ensuring data security, and refactoring code for maintainability and reliability. Whether building a new backend or improving an existing one, my services ensure your systems are robust, efficient, and capable of supporting your business needs.",
         logo: services_logo3
       }
     ]
@@ -272,115 +302,8 @@ export const content = {
     subtitle: "MY CREATION",
     image: person_project,
     project_content: [
-      // {
-      //   id: 1,
-      //   title: "HP Appen",
-      //   image: HpAppen,
-      //   category: "web",
-      //   description: `The HP app is committed to helping students excel in university examinations and attain their educational dreams.
-      //   It provides a platform for students to test their skills with past exam papers, offering valuable preparation resources.`,
-      // },
-      // {
-      //   id: 2,
-      //   title: "CoCircle",
-      //   image: CoCircle,
-      //   category: "web",
-      //   description: `CoCircle admin panel serves as the central hub for efficiently managing co-working spaces and event venues.
-      //   It boasts five distinct roles, enabling administrators to oversee bookings and streamline office operations seamlessly.`,
-      // },
       {
-        id: 3,
-        title: "CoCircle App",
-        image: CCApp,
-        category: "app",
-        description: `The CoCircle application is tailored for clients to explore and book co-working spaces and event venues. 
-        It fosters collaboration within a diverse community of users, enhancing their experience.`
-      },
-      // {
-      //   id: 4,
-      //   title: "Sthlmtechpartner",
-      //   image: Sthlm,
-      //   category: "web",
-      //   description: `The Sthlmtech Partner business website serves as an online portfolio for the company, showcasing its expertise and offerings.
-      //   This fully responsive web platform is designed to highlight the company's services, projects, and capabilities. It provides a professional online presence.`,
-      // },
-      // {
-      //   id: 5,
-      //   title: "FemClinic",
-      //   image: FemClinic,
-      //   category: "web",
-      //   description: `FemClinic is a digital platform that redefines women's healthcare, seamlessly blending conventional and holistic approaches.
-      //   Patients can effortlessly schedule appointments and engage in audio/video consultations with experienced doctors.`,
-      // },
-      {
-        id: 5,
-        title: "Sapid App",
-        image: Sapid,
-        category: "app",
-        description: `Sapid simplifies contact sharing, generating unique IDs for users to share contact details and social media profiles via NFC or QR code. 
-        It streamlines personal and professional connections.`
-      },
-      // {
-      //   id: 6,
-      //   title: "Homeats Admin Panel",
-      //   image: Homeats,
-      //   category: "web",
-      //   description: `Homeats bridges the gap for those seeking healthy homemade food, connecting them with expert restaurants,
-      //   home-cooked food producers, and professional chefs under the guidance of dieticians. It promotes a "HEALTHY FOOD FOR LIFE" philosophy.`,
-      // },
-      {
-        id: 7,
-        title: "Sanai Parents",
-        image: SanaiParents,
-        category: "app",
-        description: `Sanai Parents is an essential tool for parents of Sanai School students, providing a straightforward way to track their child's academic 
-        progress and daily activities. It includes progress tracking, homework management, assignment submissions, communication, and timely announcements.`
-      },
-      {
-        id: 8,
-        title: "Sanai Teacher",
-        image: SanaiTeacher,
-        category: "app",
-        description: `Sanai Teacher streamlines educators' daily tasks at Sanai School with features like attendance tracking, progress monitoring, 
-        homework management, assignment submissions, communication, and access to salary and result details.`
-      },
-      {
-        id: 9,
-        title: "Kamaee",
-        image: project2,
-        category: "web",
-        description: `KAMAEE is a versatile platform, akin to Fiverr, offering services ranging from electricians to tailors. 
-        It features an admin panel and chat functionality, facilitating connections between non-IT workers and clients.`
-      },
-      {
-        id: 10,
-        title: "Kamaee App",
-        image: KamaeeApp,
-        category: "app",
-        description: `I had the privilege of contributing to Project Kamaee, a pivotal initiative by SecureHops dedicated to empowering women to achieve 
-        their full potential in their chosen fields. This project aimed to provide women with the necessary tools, skills, and resources essential 
-        for their success.`
-      },
-      {
-        id: 11,
-        title: "Kamaee Admin Panel",
-        image: project2,
-        category: "web",
-        description: `The KAMAEE Admin panel oversee incoming orders from sellers and delegate these orders to sub-admins who, in turn, 
-        assign them to delivery personnel or riders. This panel enables comprehensive order tracking, offers the ability to edit blacklists, 
-        and provides various tools to facilitate seamless order management.`
-      },
-      {
-        id: 12,
-        title: "BetYouCan",
-        image: BetYouCan,
-        category: "app",
-        description: `The Bet You Can application is a unique and innovative platform designed to cultivate early rising habits through a captivating 
-        financial incentive mechanism rooted in self-betting. Users have the autonomy to set their preferred wake-up times and designate specific days 
-        of the week for the challenge.`
-      },
-      {
-        id: 13,
+        id: 1,
         title: "WyzePay",
         image: Wyzepay,
         category: "app",
@@ -388,13 +311,142 @@ export const content = {
         through payment integration, Google Maps, and more.`
       },
       {
-        id: 14,
+        id: 2,
+        title: "Ahlsell",
+        image: Ahlsell,
+        category: "app",
+        description: `This application focuses on providing a seamless shopping experience for electronic products. The app encompasses a wide range of products, including el electrical, mechanical, and household items, among others. And the organization operating stores in Sweden, Finland, and Norway.`
+      },
+      {
+        id: 3,
+        title: "Dometic Climate",
+        image: Dometic,
+        category: "app",
+        description: `This app serves as a bridge between various devices manufactured by Dometic. By leveraging Bluetooth technology, we enable seamless communication between the app and the devices. Users can conveniently managed and control various devices through the intuitive interface of the application.`
+      },
+      {
+        id: 4,
+        title: "Vassla",
+        image: Vassla,
+        category: "app",
+        description: `The purpose of this vehicle rental app provides a user-friendly platform for renting cars. The rental fee is calculated based on the rental period. To ensure efficient fleet management, the admin can view the location of each vehicle in real-time on a map. The app also offers a secure payment gateway for easy transactions.`
+      },
+      {
+        id: 5,
+        title: "Trusted Messaging",
+        image: Trusted,
+        category: "app",
+        description: `This application is designed for managing message and call campaigns. Users can set up campaigns and choose between message or call formats. For call campaigns, users have the option to include a voice message, while message campaigns allow for a text message to be provided.`
+      },
+      {
+        id: 6,
+        title: "Sapid",
+        image: Sapid,
+        category: "app",
+        description: `Sapid simplifies contact sharing, generating unique IDs for users to share contact details and social media profiles via NFC or QR code. It streamlines personal and professional connections.`
+      },
+      {
+        id: 7,
+        title: "Kamaee App",
+        image: KamaeeApp,
+        category: "app",
+        description: `I had the privilege of contributing to Project Kamaee, a pivotal initiative by SecureHops dedicated to empowering women to achieve their full potential in their chosen fields. This project aimed to provide women with the necessary tools, skills, and resources essential for their success.`
+      },
+      {
+        id: 8,
+        title: "CoCircle App",
+        image: CCApp,
+        category: "app",
+        description: `The CoCircle application is tailored for clients to explore and book co-working spaces and event venues. It fosters collaboration within a diverse community of users, enhancing their experience.`
+      },
+      {
+        id: 9,
+        title: "Sanai Parents",
+        image: SanaiParents,
+        category: "app",
+        description: `Sanai Parents is an essential tool for parents of Sanai School students, providing a straightforward way to track their child's academic progress and daily activities. It includes progress tracking, homework management, assignment submissions and timely announcements.`
+      },
+      {
+        id: 10,
+        title: "Sanai Teacher",
+        image: SanaiTeacher,
+        category: "app",
+        description: `Sanai Teacher streamlines educators' daily tasks at Sanai School with features like attendance tracking, progress monitoring, homework management, assignment submissions, communication, and access to salary and result details.`
+      },
+      {
+        id: 11,
+        title: "BetYouCan",
+        image: BetYouCan,
+        category: "app",
+        description: `The Bet You Can application is a unique and innovative platform designed to cultivate early rising habits through a captivating financial incentive mechanism rooted in self-betting. Users have the autonomy to set their preferred wake-up times and designate specific days of the week for the challenge.`
+      },
+      {
+        id: 12,
         title: "Mood",
         image: MoodApp,
         category: "app",
-        description: `Mood Social gives you a full overview of things to do in your city. Find exciting activities, places and people based 
-        on what you ar e in the Mood for and experience them together.`
-      }
+        description: `Mood Social gives you a full overview of things to do in your city. Find exciting activities, places and people based on what you ar e in the Mood for and experience them together.`
+      },
+      {
+        id: 1,
+        title: "HP Appen",
+        image: HpAppen,
+        category: "web",
+        description: `The HP app is committed to helping students excel in university examinations and attain their educational dreams.
+        It provides a platform for students to test their skills with past exam papers, offering valuable preparation resources.`,
+      },
+      {
+        id: 2,
+        title: "CoCircle",
+        image: CoCircle,
+        category: "web",
+        description: `CoCircle admin panel serves as the central hub for efficiently managing co-working spaces and event venues.
+        It boasts five distinct roles, enabling administrators to oversee bookings and streamline office operations seamlessly.`,
+      },
+     
+      {
+        id: 4,
+        title: "Sthlmtechpartner",
+        image: Sthlm,
+        category: "web",
+        description: `The Sthlmtech Partner business website serves as an online portfolio for the company, showcasing its expertise and offerings.
+        This fully responsive web platform is designed to highlight the company's services, projects, and capabilities. It provides a professional online presence.`,
+      },
+      {
+        id: 5,
+        title: "FemClinic",
+        image: FemClinic,
+        category: "web",
+        description: `FemClinic is a digital platform that redefines women's healthcare, seamlessly blending conventional and holistic approaches.
+        Patients can effortlessly schedule appointments and engage in audio/video consultations with experienced doctors.`,
+      },
+     
+      {
+        id: 6,
+        title: "Homeats Admin Panel",
+        image: Homeats,
+        category: "web",
+        description: `Homeats bridges the gap for those seeking healthy homemade food, connecting them with expert restaurants,
+        home-cooked food producers, and professional chefs under the guidance of dieticians. It promotes a "HEALTHY FOOD FOR LIFE" philosophy.`,
+      },
+     
+      {
+        id: 9,
+        title: "Kamaee",
+        image: KamaeeLanding,
+        category: "web",
+        description: `KAMAEE is a versatile platform, akin to Fiverr, offering services ranging from electricians to tailors. 
+        It features an admin panel and chat functionality, facilitating connections between non-IT workers and clients.`
+      },
+      {
+        id: 11,
+        title: "Kamaee Admin Panel",
+        image: KamaeeAdmin,
+        category: "web",
+        description: `The KAMAEE Admin panel oversee incoming orders from sellers and delegate these orders to sub-admins who, in turn, 
+        assign them to delivery personnel or riders. This panel enables comprehensive order tracking, offers the ability to edit blacklists, 
+        and provides various tools to facilitate seamless order management.`
+      },
     ]
   },
   Testimonials: {
