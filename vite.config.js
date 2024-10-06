@@ -19,7 +19,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/AQ-Portfolio/', 
+  base: '/AQ-Portfolio/',
   esbuild: {
     loader: 'jsx', 
     include: /src\/.*\.js$/, 
