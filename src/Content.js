@@ -182,50 +182,62 @@ export const content = {
       },
       {
         id: 11,
-        lang_name: "Redux Saga/thunk",
+        lang_name: "Redux Saga",
         icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png",
         exp_level: "Experienced"
       },
       {
         id: 12,
+        lang_name: "Redux thunk",
+        icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png",
+        exp_level: "Experienced"
+      },
+      {
+        id: 13,
         lang_name: "JavaScript",
         icon: "https://img.icons8.com/color/48/null/javascript--v1.png",
         exp_level: "Experienced"
       },
       {
-        id: 13,
+        id: 14,
         lang_name: "Jira",
         icon: "https://wac-cdn.atlassian.com/dam/jcr:e0cedee5-a180-40ad-b7c3-a66d6e60f483/jira-app-adg3.svg?cdnVersion=1124",
         exp_level: "Experienced"
       },
       {
-        id: 14,
+        id: 15,
         lang_name: "Firebase",
         icon: firebaseLogo,
         exp_level: "Experienced"
       },
       {
-        id: 15,
+        id: 16,
         lang_name: "SEO",
         icon: seoLogo,
         exp_level: "Experienced"
       },
       {
-        id: 16,
+        id: 17,
         lang_name: "Git",
         icon: "https://img.icons8.com/color/48/null/git.png",
         exp_level: "Experienced"
       },
       {
-        id: 17,
+        id: 18,
         lang_name: "Tailwind CSS",
         icon: tailwindcssLogo,
         exp_level: "Experienced"
       },
       {
-        id: 18,
+        id: 19,
         lang_name: "Material UI",
         icon: materialuiLogo,
+        exp_level: "Experienced"
+      },
+      {
+        id: 20,
+        lang_name: "Redux-toolkit",
+        icon: "https://img.icons8.com/?size=512&id=jD-fJzVguBmw&format=png",
         exp_level: "Experienced"
       },
      
