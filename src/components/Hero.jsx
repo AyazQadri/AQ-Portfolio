@@ -85,49 +85,47 @@
 
 // export default Hero;
 
-
-
 // import content
 import { useEffect } from "react";
 import { content } from "../Content";
 import Typewriter from "typewriter-effect";
-import Spline from '@splinetool/react-spline';
+import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
   const { hero } = content;
 
   return (
     <section id="home" className="overflow-hidden">
-      <div className="min-h-screen relative flex md:flex-row flex-col-reverse md:items-end justify-center">
+      <div className="min-h-screen relative flex md:flex-row flex-col md:items-end justify-center">
+        {/* First Column */}
         <div
           data-aos="slide-right"
           data-aos-delay="1200"
-          className="absolute h-full md:w-4/12 w-8/12 top-0 left-0 bg-primaryLinear bottom-0 -z-10"
+          className="h-full md:w-4/12 w-full md:absolute md:top-0 md:left-0 md:bottom-0 md:-z-10 bg-primaryLinear flex items-center"
         >
-          <div className="absolute top-[20%] right-8 left-8">
-           <h4 className="heading">
-            Hi There!{" "}
-            <span className="wave" role="img" aria-labelledby="wave">
-              👋🏻
-            </span>
-          </h4>
-          <h4 className="heading">
-            I Am
-          </h4>
-          <h1 className=" text-[#EAF2FA]">
-            {hero.firstName}{" "}
-            <span className="text-dark_primary">{hero.LastName}</span>
-          </h1>
+          <div className="px-6 md:absolute md:top-[20%] md:right-8 md:left-8">
+            <h4 className="heading">
+              Hi There!{" "}
+              <span className="wave" role="img" aria-labelledby="wave">
+                👋🏻
+              </span>
+            </h4>
+            <h4 className="heading">I Am</h4>
+            <h1 className="text-[#EAF2FA]">
+              {hero.firstName}{" "}
+              <span className="text-dark_primary">{hero.LastName}</span>
+            </h1>
           </div>
         </div>
 
-        <div className="pb-16 px-6 pt-5" data-aos="fade-down">
+        {/* Second Column */}
+        <div className="pb-16 px-6 pt-5 w-full md:w-8/12" data-aos="fade-down">
           <Typewriter
             options={{
               strings: ["Welcome to my Portfolio!"],
               autoStart: true,
               loop: true,
-              deleteSpeed: 60,
+              deleteSpeed: 60
             }}
           />
           <div className="mt-4">
@@ -148,8 +146,9 @@ const Hero = () => {
                 key={i}
                 data-aos="fade-down"
                 data-aos-delay={i * 300}
-                className={`flex items-center w-80 gap-5
-            ${i === 1 && " flex-row-reverse text-right"}  `}
+                className={`flex items-center w-80 gap-5 ${
+                  i === 1 && "flex-row-reverse text-right"
+                }`}
               >
                 <h3>{content.count}</h3>
                 <p>{content.text}</p>
@@ -157,15 +156,6 @@ const Hero = () => {
             ))}
           </div>
         </div>
-
-        {/* sec col */}
-        {/* <div className="md:h-[37rem] h-96"> */}
-          {/* <img
-            src={hero.image}
-            data-aos="slide-up"
-            alt="..."
-            className="h-full object-cover" />*/}
-        {/* </div> */}
       </div>
     </section>
   );
