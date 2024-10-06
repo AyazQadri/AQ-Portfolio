@@ -103,7 +103,7 @@ const Hero = () => {
           data-aos-delay="1200"
           className="h-full md:w-4/12 w-full md:absolute md:top-0 md:left-0 md:bottom-0 md:-z-10 bg-primaryLinear flex items-center"
         >
-          <div className="px-6 md:absolute md:top-[20%] md:right-8 md:left-8">
+          <div className="w-full px-2 md:absolute md:top-[20%] md:right-8 md:left-8 text-right md:text-left">
             <h4 className="heading">
               Hi There!{" "}
               <span className="wave" role="img" aria-labelledby="wave">
