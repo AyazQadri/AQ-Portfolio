@@ -1,4 +1,4 @@
-import React, { createElement, useRef }  from "react";
+import { createElement, useRef }  from "react";
 import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";

@@ -128,7 +128,7 @@ const Hero = () => {
               deleteSpeed: 60
             }}
           />
-          <div className="mt-4">
+          <div className="mt-4 " >
             <h2>{hero.title}</h2>
           </div>
           <br />
