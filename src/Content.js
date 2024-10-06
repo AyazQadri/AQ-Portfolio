@@ -98,7 +98,7 @@ export const content = {
     }
   ],
   hero: {
-    title: "Website & Application",
+    title: "Full Stack Web & Application",
     subtitle: "Developer",
     firstName: "AYAZ",
     LastName: "QADRI",
@@ -110,7 +110,7 @@ export const content = {
         text: "Years of Experinse in Web & Application development"
       },
       {
-        count: "30+",
+        count: "50+",
         text: "Projects Worked in my career"
       }
     ]
