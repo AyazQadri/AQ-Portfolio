@@ -121,7 +121,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="pb-16 px-6 pt-5 ml-[150px]" data-aos="fade-down">
+        <div className="pb-16 px-6 pt-10 sm:ml-[150px] mt-[300px]" data-aos="fade-down">
           <Typewriter
             options={{
               strings: ["Welcome to my Portfolio!"],
@@ -130,7 +130,7 @@ const Hero = () => {
               deleteSpeed: 60,
             }}
           />
-          <div className="mt-4" >
+          <div className="mt-4 " >
             <h2>{hero.title}</h2>
           </div>
           <br />
