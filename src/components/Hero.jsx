@@ -85,7 +85,6 @@
 
 // export default Hero;
 
-// import content
 import { useEffect } from "react";
 import { content } from "../Content";
 import Typewriter from "typewriter-effect";
@@ -96,7 +95,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="overflow-hidden">
-      <div className="min-h-screen relative flex md:flex-row flex-col md:items-end justify-center">
+      <div className="min-h-screen relative flex flex-col md:flex-row md:items-end justify-center">
         {/* First Column */}
         <div
           data-aos="slide-right"
@@ -119,7 +118,10 @@ const Hero = () => {
         </div>
 
         {/* Second Column */}
-        <div className="pb-16 px-6 pt-5 w-full md:w-8/12" data-aos="fade-down">
+        <div
+          className="pb-16 px-6 pt-5 mt-5 w-full md:w-8/12 md:absolute md:right-0"
+          data-aos="fade-down"
+        >
           <Typewriter
             options={{
               strings: ["Welcome to my Portfolio!"],
@@ -135,7 +137,7 @@ const Hero = () => {
           <div className="flex justify-center items-center pb-5">
             <h2>{hero.subtitle}</h2>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <button className="btn">
               <a href="#contact">{hero.btnText}</a>
             </button>
